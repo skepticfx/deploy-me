@@ -5,8 +5,7 @@ export default {
 };
 
 async function handleRequest(request, env, ctx) {
-    const url = new URL(request.url);
-    const title = env.title
+    const title = env.TITLE
     return new Response(body(title), {headers: {
         "content-type": "text/html",
     }})
