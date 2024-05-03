@@ -1,6 +1,8 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "deploy-me"
 compatibility_date = "2024-04-23"
+# Build settings
+main = "./entrypoint.js"
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Docs:
